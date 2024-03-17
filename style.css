@@ -60,8 +60,8 @@ input {
   }
 
   &:focus {
-    outline: 2px solid var(--mainColor);;
-    border: none;
+    outline: none;
+    border: 2px solid var(--mainColor);
   }
 }
 
