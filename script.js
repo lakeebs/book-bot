@@ -31,18 +31,18 @@ toggle.addEventListener('click', function(e) {
   }
 });
 
+// Add book to library
+function addBook(author, title, pages, read) {
+  const book = new Book(author, title, pages, read);
+  myLibrary.push(book);
+}
+
 // Add sample books
 addBook('Jane Austen', 'Pride and Prejudice', 416, 'Unread');
 addBook('Stephen King', 'The Stand', 823, 'Read');
 addBook('George Orwell', '1984', 328, 'Read');
 addBook('Aldous Huxley', 'Brave New World', 288, 'Unread');
 displayBooks();
-
-// Add book to library
-function addBook(author, title, pages, read) {
-  const book = new Book(author, title, pages, read);
-  myLibrary.push(book);
-}
 
 // Display books
 function displayBooks() {
