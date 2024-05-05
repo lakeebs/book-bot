@@ -80,6 +80,11 @@ input[type='checkbox'] {
 button {
   font-family: var(--font);
   padding: 0.3rem 0.5rem;
+  transition: transform;
+
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
 button, input[type='checkbox'] {
